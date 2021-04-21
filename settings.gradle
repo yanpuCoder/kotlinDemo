@@ -1,2 +1,5 @@
+include ':commonlib'
+include ':netlib'
+include ':baselib'
 include ':app'
 rootProject.name = "KotlinDemo"
