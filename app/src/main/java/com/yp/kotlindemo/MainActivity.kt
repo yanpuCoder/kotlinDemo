@@ -4,6 +4,7 @@ import android.bluetooth.le.ScanRecord
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
 import com.yp.commonlib.log.Logger
 import com.yp.commonlib.util.ScreenUtils
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         Logger.e("getStatusBarHeight: $statusBarHeight")
         Logger.e("getNavigationBarHeight: ${ScreenUtils.getNavigationBarHeight(this)}")
         Logger.e("isAllScreenDevice: ${ScreenUtils.isAllScreenDevice(this)}")
+
     }
 
     fun onClick(view: View) {
