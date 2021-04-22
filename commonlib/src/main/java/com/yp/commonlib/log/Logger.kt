@@ -2,6 +2,7 @@ package com.yp.commonlib.log
 
 import android.os.Build
 import android.util.Log
+import com.yp.commonlib.BuildConfig
 
 /**
  * @author : yanpu
@@ -10,6 +11,7 @@ import android.util.Log
  */
 object Logger {
 
+    private const val TAG = "Test"
     const val V = Log.VERBOSE
     const val D = Log.DEBUG
     const val I = Log.INFO
@@ -17,7 +19,14 @@ object Logger {
     const val E = Log.ERROR
     const val A = Log.ASSERT
 
-    fun e(vararg content: Any){
-//       BuildConfig
+    fun e(vararg content: String){
+        if (BuildConfig.DEBUG) {
+            val sb = StringBuffer()
+            for (element in content){
+                sb.append("\n\t")
+                sb.append(element)
+            }
+            Log.e(TAG, "e: ${sb.toString()}")
+        }
     }
 }
