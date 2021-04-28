@@ -1,7 +1,7 @@
-package com.yp.commonlib.util
+package com.yp.bridge.util
 
 import android.content.Context
-import com.yp.commonlib.log.Logger
+import com.yp.bridge.log.Logger
 import java.lang.Exception
 
 /**

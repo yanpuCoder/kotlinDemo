@@ -2,8 +2,9 @@ package com.yp.kotlindemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.yp.commonlib.log.Logger
-import com.yp.commonlib.util.ScreenUtils
+import com.yp.bridge.frame.AutoMarginUtils
+import com.yp.bridge.log.Logger
+import com.yp.bridge.util.ScreenUtils
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +17,6 @@ class MainActivity2 : AppCompatActivity() {
         Logger.e("MainActivity2: getStatusBarHeight: ${ScreenUtils.getStatusBarHeight(this)}")
         Logger.e("MainActivity2: getNavigationBarHeight: ${ScreenUtils.getNavigationBarHeight(this)}")
         Logger.e("MainActivity2: isAllScreenDevice: ${ScreenUtils.isAllScreenDevice(this)}")
+        AutoMarginUtils.displayWidth
     }
 }

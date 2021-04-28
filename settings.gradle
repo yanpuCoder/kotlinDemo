@@ -1,5 +1,6 @@
+include ':bridge'
 include ':commonlib'
-include ':netlib'
+include ':net'
 include ':baselib'
 include ':app'
 rootProject.name = "KotlinDemo"

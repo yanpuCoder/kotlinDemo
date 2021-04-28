@@ -1,4 +1,4 @@
-package com.yp.netlib;
+package com.yp.net;
 
 /**
  * @author : yanpu

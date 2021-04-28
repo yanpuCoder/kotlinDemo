@@ -1,13 +1,11 @@
 package com.yp.kotlindemo
 
-import android.bluetooth.le.ScanRecord
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
 import android.view.View
-import com.yp.commonlib.log.Logger
-import com.yp.commonlib.util.ScreenUtils
+import com.yp.bridge.log.Logger
+import com.yp.bridge.util.ScreenUtils
 
 class MainActivity : AppCompatActivity() {
 

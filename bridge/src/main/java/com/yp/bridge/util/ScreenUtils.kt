@@ -1,14 +1,11 @@
-package com.yp.commonlib.util
+package com.yp.bridge.util
 
 import android.app.Activity
 import android.content.Context
 import android.graphics.Point
-import android.graphics.Rect
 import android.os.Build
-import android.util.DisplayMetrics
-import android.view.Display
 import android.view.WindowManager
-import com.yp.commonlib.log.Logger
+import com.yp.bridge.log.Logger
 
 /**
  * @author : yanpu

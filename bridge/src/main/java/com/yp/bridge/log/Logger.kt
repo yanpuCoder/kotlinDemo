@@ -1,6 +1,5 @@
-package com.yp.commonlib.log
+package com.yp.bridge.log
 
-import android.os.Build
 import android.util.Log
 import com.yp.commonlib.BuildConfig
 

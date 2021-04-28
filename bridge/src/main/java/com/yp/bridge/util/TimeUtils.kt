@@ -1,6 +1,6 @@
-package com.yp.commonlib.util
+package com.yp.bridge.util
 
-import com.yp.commonlib.log.Logger
+import com.yp.bridge.log.Logger
 import java.text.SimpleDateFormat
 import java.util.*
 
