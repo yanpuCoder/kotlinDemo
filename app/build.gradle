@@ -12,7 +12,7 @@ android {
     buildToolsVersion cfg.buildToolsVersion
 
     defaultConfig {
-        applicationId app.application
+        applicationId app.applicationId
         minSdkVersion cfg.minSdkVersion
         targetSdkVersion cfg.targetSdkVersion
         versionCode app.versionCode
@@ -46,4 +46,33 @@ dependencies {
     implementation project(path: ':commonlib')
     implementation project(path: ':net')
     implementation project(path: ':bridge')
+
+
+
+/**
+ * // ViewModel
+ *         implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+ *         // LiveData
+ *         implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+ *         // 只有Lifecycles (不带 ViewModel or LiveData)
+ *         implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+ *
+ *         // Saved state module for ViewModel
+ *         implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+ *
+ *         // lifecycle注解处理器
+ *         annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+ *         // 替换 - 如果使用Java8,就用这个替换上面的lifecycle-compiler
+ *         implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+ *
+ * 	//以下按需引入
+ *         // 可选 - 帮助实现Service的LifecycleOwner
+ *         implementation "androidx.lifecycle:lifecycle-service:$lifecycle_version"
+ *         // 可选 - ProcessLifecycleOwner给整个 app进程 提供一个lifecycle
+ *
+ *         // 可选 - ReactiveStreams support for LiveData
+ *         implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version"
+ *         // 可选 - Test helpers for LiveData
+ *         testImplementation "androidx.arch.core:core-testing:$arch_version"
+ */
 }

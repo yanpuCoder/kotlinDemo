@@ -36,5 +36,11 @@ android {
 
 apply from: "../dependencies.gradle"
 dependencies {
-
+    api "com.google.code.gson:gson:$ext.gsonVersion"
+    api "com.squareup.okhttp3:okhttp:$ext.okHttp3Version"
+    api "com.squareup.retrofit2:retrofit:$ext.retrofit2Version"
+    api "com.squareup.retrofit2:converter-gson:$ext.converGsonVersion"
+    api "com.squareup.retrofit2:converter-scalars:$ext.converScalarsVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$ext.kotlinCoroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$ext.kotlinCoroutines"
 }

@@ -15,6 +15,19 @@ ext {
     junitVersion = "1.1.1"
     espressoVersion = "3.2.0"
 
+    lifecycle_version = "2.2.0"
+
+    gsonVersion = "2.8.6"
+    okHttp3Version = "4.7.2"
+    retrofit2Version = "2.9.0"
+    converGsonVersion = "2.9.0"
+    converScalarsVersion = "2.8.1"
+
+    kotlinCoroutines = "1.4.2"
+
+    activityKtx = "1.2.2"
+    fragmentKtx = "1.3.2"
+
     depends = [
             "kotlin"          : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
             "core"            : "androidx.core:core-ktx:${coreVersion}",

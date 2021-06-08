@@ -1,7 +1,7 @@
 package com.yp.bridge.log
 
 import android.util.Log
-import com.yp.commonlib.BuildConfig
+import com.yp.bridge.BuildConfig
 
 /**
  * @author : yanpu

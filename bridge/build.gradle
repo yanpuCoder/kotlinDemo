@@ -37,4 +37,9 @@ android {
 apply from: "../dependencies.gradle"
 dependencies {
 
+    api "androidx.activity:activity-ktx:$ext.activityKtx"
+    api "androidx.fragment:fragment-ktx:$ext.fragmentKtx"
+    api "androidx.lifecycle:lifecycle-process:$ext.lifecycle_version"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$ext.lifecycle_version"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$ext.lifecycle_version"
 }
